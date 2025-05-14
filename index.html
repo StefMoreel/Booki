@@ -16,41 +16,43 @@
 
 <body>
     <div class="main-container">
-        <nav>
-            <img src="/images/logo/Booki.png" alt="logo Booki">
-            <ul>
-                <li><a href="#section hébergement">Hébergements</a></li>
-                <li><a href="#section activités">Activités</a></li>
+        <nav class="nav">
+            <img class="logo-booki" src="/images/logo/Booki.png" alt="logo Booki">
+            <ul class="links-hébergement-and-popular">
+                <li><a class="link-hébergement" href="#section hébergement">Hébergements</a></li>
+                <li><a class="link-activités" href="#section activités">Activités</a></li>
             </ul>
         </nav>
         <header>
-            <h1>Trouver votre hébergement pour des vacances de rêves</h1>
-            <p>En plein centre-ville ou en pleine nature</p>
-            <div id="search">
-                <i class="fa-solid fa-location-dot"></i>
+            <div class="headline">
+                <h1>Trouver votre hébergement pour des vacances de rêves</h1>
+                <p>En plein centre-ville ou en pleine nature</p>
+            </div>
+            <div id="search-bar">
+                <i class="icone-location fa-solid fa-location-dot"></i>
                 <form>
-                    <input type="search" id="city" name="q">
+                    <input type="search" id="city" name="q" placeholder="Marseille, France">
                     <button>Rechercher</button>
                 </form>
             </div>    
-            <div id="filtres">
-                <h2>Filtres</h2>
-                <div class="filtre-economie">
+            <div id="section-filter">
+                <h2 class="filter-title">Filtres</h2>
+                <div class="filter-button filtre-economique">
                     <i class="fa-solid fa-money-bill-wave"></i>
-                    <h2>Economie</h2>
+                    <h2>Économique</h2>
                 </div>
-                <div class="filtre-familial">
+                <div class="filter-button filtre-familial">
                     <i class="fa-solid fa-person"></i>
                     <h2>Familial</h2>
                 </div>
-                <div class="filtre-Romantique">
+                <div class="filter-button filtre-Romantique">
                     <i class="fa-solid fa-heart"></i>
                     <h2>Romantique</h2>
                 </div>
-                <div class="filtre-pepites">
+                <div class="filter-button filtre-pepites">
                     <i class="fa-solid fa-fire"></i>
                     <h2>Nos pépites</h2>
-                </div>    
+                </div> 
             </div>
             <div class="infobar">
                 <i class="icone-info fa-solid fa-info"></i>
@@ -179,7 +181,7 @@
                             </article>
                         </a>    
                     </div>
-                    <div class="Hébergements-footer">
+                    <div class="hébergements-footer">
                         <a href="#">
                             <h3>Afficher plus</h3>
                         </a>
@@ -252,8 +254,11 @@
                     </div>
                 </section>
             </div>
+
         </main>
-        <footer></footer>
+        <footer>
+
+        </footer>
     </div>
 </body>
 
