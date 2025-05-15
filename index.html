@@ -19,8 +19,8 @@
         <nav class="nav">
             <img class="logo-booki" src="/images/logo/Booki.png" alt="logo Booki">
             <ul class="links-hébergement-and-popular">
-                <li><a class="link-hébergement" href="#section hébergement">Hébergements</a></li>
-                <li><a class="link-activités" href="#section activités">Activités</a></li>
+                <li><a class="link-hébergement" href="#section-hebergement">Hébergements</a></li>
+                <li><a class="link-activités" href="#section-activités">Activités</a></li>
             </ul>
         </nav>
         <header>
@@ -32,27 +32,31 @@
                 <i class="icone-location fa-solid fa-location-dot"></i>
                 <form>
                     <input type="search" id="city" name="q" placeholder="Marseille, France">
-                    <button>Rechercher</button>
+                    <button class="search-button">Rechercher</button>
                 </form>
             </div>    
             <div id="section-filter">
-                <h2 class="filter-title">Filtres</h2>
-                <div class="filter-button filtre-economique">
-                    <i class="fa-solid fa-money-bill-wave"></i>
-                    <h2>Économique</h2>
+                <div class="filter-title">
+                    <h2>Filtres</h2>
                 </div>
-                <div class="filter-button filtre-familial">
-                    <i class="fa-solid fa-person"></i>
-                    <h2>Familial</h2>
+                <div class="filter-button">
+                    <div class="filtre-type">
+                        <i class="fa-solid fa-money-bill-wave"></i>
+                        <h2>Économique</h2>
+                    </div>
+                    <div class="filtre-type">
+                        <i class="fa-solid fa-person"></i>
+                        <h2>Familial</h2>
+                    </div>
+                    <div class="filtre-type">
+                        <i class="fa-solid fa-heart"></i>
+                        <h2>Romantique</h2>
+                    </div>
+                    <div class="filtre-type">
+                        <i class="fa-solid fa-fire"></i>
+                        <h2>Nos pépites</h2>
+                    </div> 
                 </div>
-                <div class="filter-button filtre-Romantique">
-                    <i class="fa-solid fa-heart"></i>
-                    <h2>Romantique</h2>
-                </div>
-                <div class="filter-button filtre-pepites">
-                    <i class="fa-solid fa-fire"></i>
-                    <h2>Nos pépites</h2>
-                </div> 
             </div>
             <div class="infobar">
                 <i class="icone-info fa-solid fa-info"></i>
@@ -61,7 +65,7 @@
         </header>
         <main>
             <div class="hebergements-and-populaires">
-                <section class="hebergements">
+                <section id="section-hebergements" class="hebergements">
                     <div class="hébergements-title">
                         <h2 class="section-title">Hébergements à Marseille</h2>
                     </div>
@@ -255,7 +259,7 @@
                 </section>
             </div>
             <div>
-                <section class="activités">
+                <section id="section-activités" class="activités">
                     <div class="activités-title">
                         <h2 class="section-title">Activités à Marseille</h2>
                     </div>

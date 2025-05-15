@@ -94,26 +94,30 @@ a {
 }
 
 /****** Header **********/
+header{
+    display: flex;
+    flex-direction: column;
+}
 .headline{
-    height: 53px;
+    
 }
 .headline h1{
-    margin-bottom: 0;
+    margin-bottom: 8px;
     font-size: 22px;
 }
 
 .headline p{
-    margin-top: 8px;
+    margin-top: 0;
+    margin-bottom: 33px;
+    
 }
 #search-bar{
     display: flex;
     align-items: center;
-    margin-top: 33px;
     margin-bottom: 33px;
     gap: 24px;
     border: #F2F2F2 1px;
     border-radius: 15px;
-    height: 49px;
     gap: 0;
 }
 
@@ -127,15 +131,12 @@ a {
     border-radius: 15px 0 0 15px;
     padding: 17.5px;
 
-    
-
 }
 
 form{
     display: flex;
-
-
 }
+
 input{
     border: #F2F2F2 1px solid;
     width: 195px;
@@ -150,7 +151,7 @@ input{
     font-weight: 700;
 }
 
-button{
+.search-button{
     border: #F2F2F2 1px;
     border-radius: 0 15px 15px 0;
     font-family: 'Raleway', sans-serif;
@@ -164,17 +165,21 @@ button{
 #section-filter{
     display: flex;
     gap: 15px;
-    height: 50px;
-    margin-top: 33px;
+   
     margin-bottom: 33px;
 }
 
-.filter-title{
+.filter-title h2{
     font-size: 18px;
     display: flex;
     align-items: center;
 }
 .filter-button{
+    display: flex;
+    gap: 10px;
+
+}
+.filtre-type{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -194,12 +199,11 @@ button{
     font-size: 17px;
 }
 
-
 .infobar {
     display: flex;
     align-items: center;
     gap: 10px;
-    height: 24px;
+  
     margin-bottom: 33px;
 }
 .icone-info{
@@ -403,6 +407,11 @@ footer{
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    #section-filter{
+        flex-direction: column;
+    }
+
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -432,6 +441,13 @@ footer{
 
     .populaires-cards .card-subtitle {
         font-size: 13px;
+    }
+
+    .activités-cards .card{
+        width: 12rem;
+    }
+    .activités-cards img{
+        height: 200px;
     }
 }
 
