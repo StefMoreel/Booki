@@ -19,8 +19,12 @@
         <nav class="nav">
             <img class="logo-booki" src="/images/logo/Booki.png" alt="logo Booki">
             <ul class="links-hébergement-and-popular">
-                <li><a class="link-hébergement" href="#section-hebergement">Hébergements</a></li>
-                <li><a class="link-activités" href="#section-activités">Activités</a></li>
+                <div class="lien-hebergement">
+                    <li><a class="link-hébergement" href="#section-hebergements">Hébergements</a></li>
+                </div>
+                <div class="lien-activités">
+                    <li><a class="link-activités" href="#section-activités">Activités</a></li>
+                </div>    
             </ul>
         </nav>
         <header>
@@ -31,8 +35,14 @@
             <div id="search-bar">
                 <i class="icone-location fa-solid fa-location-dot"></i>
                 <form>
-                    <input type="search" id="city" name="q" placeholder="Marseille, France">
-                    <button class="search-button">Rechercher</button>
+                    <div class="input-button">
+                        <input type="search" id="city" name="q" placeholder="Marseille, France">
+                        <button class="search-button">
+                            <span class="search-button-text">Rechercher</span>
+                            <i class="search-button-icone fa solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+   
                 </form>
             </div>    
             <div id="section-filter">
@@ -40,19 +50,19 @@
                     <h2>Filtres</h2>
                 </div>
                 <div class="filter-button">
-                    <div class="filtre-type">
+                    <div class="filter-type">
                         <i class="fa-solid fa-money-bill-wave"></i>
                         <h2>Économique</h2>
                     </div>
-                    <div class="filtre-type">
+                    <div class="filter-type">
                         <i class="fa-solid fa-person"></i>
                         <h2>Familial</h2>
                     </div>
-                    <div class="filtre-type">
+                    <div class="filter-type">
                         <i class="fa-solid fa-heart"></i>
                         <h2>Romantique</h2>
                     </div>
-                    <div class="filtre-type">
+                    <div class="filter-type">
                         <i class="fa-solid fa-fire"></i>
                         <h2>Nos pépites</h2>
                     </div> 
