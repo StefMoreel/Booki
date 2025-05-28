@@ -171,7 +171,7 @@ input{
     margin-bottom: 33px;
 }
 
-.filter-title h2{
+.filter-title p{
     font-size: 18px;
     display: flex;
     align-items: center;
@@ -191,7 +191,7 @@ input{
     border:#D9D9D9 2px solid;
     border-radius: 3rem;
     padding: 0 19px 0 19px;
-    font-size: 16px;
+    font-size: 17px;
 }
 
 .filter-type:hover{
@@ -239,32 +239,43 @@ input{
 
 .hebergements {
     width: 65%;
+    display: flex;
+    flex-direction: column;
 }
 
 .hébergements-title{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 33px;
+}
+
+.hébergements-cards > a{
+    display: flex;
+    flex: 1 1 calc(33.333% - 30px);
+    justify-content: center;
+    box-sizing: border-box;
 }
 
 .hébergements-cards{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 33px;
     gap: 30px;
+    flex-wrap: wrap;
+
 }
 
 .hébergements-cards .card{
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    width: 15.5rem;
+    width: 100%;
+    
 }
 
 .hébergements-cards img{
     width: 100%;
+    aspect-ratio: 1/1;
     height: 124px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -383,7 +394,8 @@ input{
 }
 
 .activités-cards img{
-    width: 18rem;
+    max-width: 100%;
+    aspect-ratio: 1 / 1;
     height: 380px;
     border-radius: 20px 20px 0 0;
 }
@@ -408,22 +420,27 @@ footer{
     justify-content: space-between;
     background-color: #F2F2F2;
     padding: 20px;
-    padding-top: 0;
-    padding-bottom: 0;
+    margin-top: 30px;
+    gap: 30px;
     box-sizing: border-box;
 }
 
 .footer-title-list{
     width: 33%;
+    margin: 0;
+
 }
 
+.footer-title{
+    margin: 0;
+}
 .footer-list{
     list-style-type: none;
-    padding-left: 0;
-        
+    margin: 0;
+    padding: 0;
 }
 .footer-list li{
-    padding-bottom: 10px;
+   padding-top: 20px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -436,6 +453,10 @@ footer{
 
     #section-filter{
         flex-direction: column;
+    }
+
+    .filter-type p{
+        font-size: 16px;
     }
 
 /*******Hebergement et populaires*********/
@@ -607,8 +628,16 @@ footer{
         row-gap: 20px;
     }
 
+
     .filter-type{
-        flex: 1;
+        flex: 1 1 30%;
+        
+    }
+
+    .filter-type > p{
+        font-size: 14px;
+        flex : none;
+
     }
 
     .infobar{
@@ -620,6 +649,10 @@ footer{
     .hebergements-and-populaires{
         flex-direction: column-reverse;
         gap: 15px;
+    }
+
+    .hébergements-footer h3{
+        margin-top: 15px;
     }
 
     .populaires{
@@ -656,6 +689,7 @@ footer{
     }
 
     .hébergements-cards{
+        flex-direction: column;
         margin-top: 15px;
         gap: 15px;
     }
@@ -692,6 +726,11 @@ footer{
         height: 141px;
     }
 
+    .activités-cards h3{
+        padding: 20px 19px 20px 0px;
+        margin: 0;
+    }
+
 /************Footer*************/
 
     footer{
@@ -702,10 +741,11 @@ footer{
         display: flex;
         flex-direction: column;
         width: 100%;
-        padding: 15px;
+        padding: 10px;
     }
     
     .footer-title{
         margin: 0;
     }
+
 }
